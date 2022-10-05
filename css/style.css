@@ -41,7 +41,7 @@ section {
 
 .header {
     background-color: #F8F6F7;
-    background-image: url('/dz/img/bg.png');
+    background-image: url('/img/bg.png');
     overflow: hidden;
 }
 .header-top {
@@ -141,7 +141,7 @@ button {
 
 .header-girl:after {
     content: '';
-    background: url('/dz/img/makiiazh-devushka-litso-ruka-pricheska-volosy-golubye-glaza\ 1.png');
+    background: url('/img/makiiazh-devushka-litso-ruka-pricheska-volosy-golubye-glaza\ 1.png');
     width: 100%;
     height: 100%;
     position: absolute;
