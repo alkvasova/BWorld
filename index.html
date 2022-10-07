@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Мир красоты</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.1/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,13 +15,13 @@
                 <div class="header-top">
                     <a href="" class="logo">Мир красоты</a>
 
-                    <nav class="nav">
-                        <ul>
-                            <li><a href="#">Услуги и цены</a></li>
-                            <li><a href="#">Мастера</a></li>
-                            <li><a href="#">Наши работы</a></li>
-                            <li><a href="#about">О нас</a></li>
-                            <li><a href="#">Наши контакты</a></li>
+                    <nav class="navigation header__nav">
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="#">Услуги и цены</a></li>
+                            <li class="navigation__item"><a href="#">Мастера</a></li>
+                            <li class="navigation__item"><a href="#">Наши работы</a></li>
+                            <li class="navigation__item"><a href="#about">О нас</a></li>
+                            <li class="navigation__item"><a href="#">Наши контакты</a></li>
                         </ul>
                     </nav>
 
@@ -33,8 +35,28 @@
                     <h1>Создай свой образ вместе с нами</h1>
                     <p>Идеальный образ за 60 минут</p>
 
-                    <button type="button">Записаться онлайн</button>
+                    <button type="button" class="btn btn__large">Записаться онлайн</button>
                 </div>
+
+                <ul class="social social_vertical header__social">
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <img src="../BWorld/img/Vector vk.svg" alt="">
+                      </a>
+                    </li>
+            
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <img src="../BWorld/img/Vector inst.svg" alt="">
+                      </a>
+                    </li>
+            
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <img src="../BWorld/img/Vector yt.svg" alt="">
+                      </a>
+                    </li>
+                  </ul>
 
                 <div class="header-girl">
                     
@@ -47,8 +69,8 @@
         <main class="main">
             <section id="about" class="salon">
                 <div class="container">
-                    <div class="section-titl">
-                        <h2>О салоне</h2>
+                    <div >
+                        <h2 class="section__title">О салоне</h2>
                     </div>
 
                     <div class="section-inner">
@@ -91,30 +113,265 @@
 
                     </div>
                 </div>
-
             </section>
 
-            <section id="portfolio" class="section1">
+
+            <section id="uslugi" class="services">
                 <div class="container">
+                    <div class="section__main">
+                        <h2 class="section__title">Популярные услуги</h2>
+                    </div>
+    
+                    <div class="section__inner">
+                        <div class="row services">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="service">
+                                    <div class="service__picture">
+                                        <img class="service__img" src="../img/us.png" alt="Услуги">
+                                    </div>
+
+                                    <h4 class="service__title">Маникюр</h4>
+                                    <p class="service__descr">Аппаратный, комбинированный или классический.</p>
+                                    <button class="btn">Записаться</button>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="service">
+                                    <div class="service__picture">
+                                        <img class="service__img" src="../img/us.png" alt="Услуги">
+                                    </div>
+                                
+                                    <h4 class="service__title">Покрытие гель-лак</h4>
+                                    <p class="service__descr">Гель-лак наносится в несколько слоев с использование базы и топа. Каждый слой полимеризуется в LED-лампе.</p>
+                                    <button class="btn">Записаться</button>
+                                </div>
+                            </div>
+                                
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="service">
+                                    <div class="service__picture">
+                                        <img class="service__img" src="../img/us.png" alt="Услуги">
+                                    </div>
+                                    
+                                    <h4 class="service__title">Бразильский маникюр</h4>
+                                    <p class="service__descr">Выполняется в одноразовых перчатках наполненных увлажняющим лосьоном.</p>
+                                    <button class="btn">Записаться</button>
+                                </div>
+                            </div>
+                                
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="service">
+                                    <div class="service__picture">
+                                        <img class="service__img" src="../img/us.png" alt="Услуги">
+                                    </div>
+                                    
+                                    <h4 class="service__title">Педикюр</h4>
+                                    <p class="service__descr">Аппаратный, комбинированный или классический.</p>
+                                    <button class="btn">Записаться</button>
+                                </div>
+                            </div>
+                                
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="service">
+                                    <div class="service__picture">
+                                        <img class="service__img" src="../img/us.png" alt="Услуги">
+                                    </div>
+                                    
+                                    <h4 class="service__title">Парафинотерапия</h4>
+                                    <p class="service__descr">Благодаря этой процедуре увлажнение кожи увеличивается на 80%, также выводит токсины и укрепляет суставы.
+                                    </p>
+                                    <button class="btn">Записаться</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
+
+            <section id="uslst" class="services">
+                <div class="container">
+                    <div class="section__main">
+                        <h2 class="section__title">Услуги и цены</h2>
+                    </div>
+
+                    <nav class="navigation uslst__nav">
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="#">Стрижка и укладка</a></li>
+                            <li class="navigation__item"><a href="#">Косметология</a></li>
+                            <li class="navigation__item"><a href="#">Маникюр и педикюр</a></li>
+                            <li class="navigation__item"><a href="#">Макияж</a></li>
+                            <li class="navigation__item"><a href="#">Брови и ресницы</a></li>
+                            <li class="navigation__item"><a href="#">Массаж</a></li>
+                        </ul>
+                    </nav>
+
+
+                    <div class="section__inner">
+                        <div class="row masters">
+                            <div class="col-lg-5 col-md-6 col-sm-12">
+
+                                <div class="col">
+                                    <div class="colrow">
+                                        <div>
+                                            <h5 class="price_title">Женская стрижка</h5>
+                                            <p class="price_text">Короткие волосы</p>
+                                        </div>
+                                        <div><p class="st">1200 ₽</p></div>
+                                    </div>
+
+                                    <div class="colrow">
+                                        <div>
+                                            <h5 class="price_title">Мужская стрижка</h5>
+                                            <p class="price_text">Короткие волосы</p>
+                                        </div>
+                                        <div><p class="st">1200 ₽</p></div>
+                                    </div>
+
+                                    <div class="colrow">
+                                        <div>
+                                            <h5 class="price_title">Детский Стиль</h5>
+                                            <p class="price_text">Короткие волосы</p>
+                                        </div>
+                                        <div><p class="st">1200 ₽</p></div>
+                                    </div>
+
+                                    <div class="colrow">
+                                        <div>
+                                            <h5 class="price_title">Креативный Стиль</h5>
+                                            <p class="price_text">Короткие волосы</p>
+                                        </div>
+                                        <div><p class="st">1200 ₽</p></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 col-md-6 col-sm-12">
+
+                                <div class="col">
+                                    <div class="colrow">
+                                        <div>
+                                            <h5 class="price_title">Стрижка бороды и усов</h5>
+                                            <p class="price_text">Короткие волосы</p>
+                                        </div>
+                                        <div><p class="st">1200 ₽</p></div>
+                                    </div>
+
+                                    <div class="colrow">
+                                        <div>
+                                            <h5 class="price_title">Экспресс укладка</h5>
+                                            <p class="price_text">Короткие волосы</p>
+                                        </div>
+                                        <div><p class="st">1200 ₽</p></div>
+                                    </div>
+
+                                    <div class="colrow">
+                                        <div>
+                                            <h5 class="price_title">Укладка дневная</h5>
+                                            <p class="price_text">Короткие волосы</p>
+                                        </div>
+                                        <div><p class="st">1200 ₽</p></div>
+                                    </div>
+
+                                    <div class="colrow">
+                                        <div>
+                                            <h5 class="price_title">Прическа вечерняя (свадебная)</h5>
+                                            <p class="price_text">Короткие волосы</p>
+                                        </div>
+                                        <div><p class="st">3000 ₽</p></div>
+                                    </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
 
             </section>
 
-            <section id="uslugist" class="section">
+            <section id="masters" class="section section--grey">
                 <div class="container">
+                    <div class="section__header">
+                        <h2 class="section__title">Мастера</h2>
+                    </div>
+    
+                    <div class="section__inner">
+                        <p>Дружная команда настоящих профессионалов</p>
+                    </div>
 
-
+                    <div class="section__inner">
+                        <div class="row masters">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="masters">
+                                    <div class="masters__picture">
+                                        <img class="masters__img" src="/img/d1.png" alt="Мастер ногтевого сервиса">
+                                    </div>
+            
+                                        <h4 class="service__title">Краснова Ирина</h4>
+                                            <p class="masters__descr">Мастер ногтевого сервиса</p>
+                                            <p>опыт работы 5 лет</p>
+                                            </div>
+                                        </div>
+            
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <div class="masters">
+                                                <div class="masters__picture">
+                                                    <img class="masters__img" src="/img/d2.png" alt="Визажист-стилист">
+                                                </div>
+            
+                                                <h4 class="service__title">Калилова Жанна</h4>
+                                                <p class="masters__descr">Визажист-стилист</p>
+                                                <p>опыт работы 5 лет</p>
+                                            </div>
+                                        </div>
+            
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <div class="masters">
+                                                <div class="masters__picture">
+                                                    <img class="masters__img" src="/img/d3.png" alt="Парикмахер">
+                                                </div>
+            
+                                                <h4 class="service__title">Киселева Алина</h4>
+                                                <p class="masters__descr">Парикмахер</p>
+                                                <p>опыт работы 5 лет</p>
+                                            </div>
+                                        </div>
+            
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <div class="masters">
+                                                <div class="masters__picture">
+                                                    <img class="masters__img" src="/img/d4.png" alt="Мастер ногтевого сервиса">
+                                                </div>
+            
+                                                <h4 class="service__title">Иванова Елена</h4>
+                                                <p class="masters__descr">Мастер ногтевого сервиса</p>
+                                                <p>опыт работы 5 лет</p>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                        </div>
+                    </div>
                 </div>
-
-
             </section>
 
-
-
-
+            <section id="portfolio" class="section">
+                <div class="container">
+                    <div class="section__header">
+                        <h2 class="section__title">Наши работы</h2>
+                        <div class="section__actions">кнопки</div>
+                    </div>
+    
+                    <div class="section__inner">
+                        Section content
+                    </div>
+                </div>
+            </section>
 
 
 
@@ -124,7 +381,7 @@
             <div class="container">
                 <div class="info">
                     <p> &#169; 2020 "Море красоты"</p>
-                    <a href="">Политика конфиденциальности</a>
+                    <a href="/">Политика конфиденциальности</a>
                 </div>
 
                 <ul class="nav2">

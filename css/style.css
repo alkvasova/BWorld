@@ -2,7 +2,7 @@ html {
     box-sizing: border-box;
 }
 
-html, body, .wrapper {
+html, body {
   height: 100%;
 }
 
@@ -63,7 +63,7 @@ section {
     text-decoration: none;
 }
 
-.nav ul {
+.navigation__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -72,12 +72,12 @@ section {
     margin: 0;
 }
 
-.nav li:not(:last-child) {
+.navigation__item:not(:last-child) {
     margin-right: 28px;
 
 }
 
-.nav a {
+.navigation__item a {
     text-decoration: none;
     color: #333333;
     font-size: 14px;
@@ -85,7 +85,7 @@ section {
     transition: 0.15px color;
 }
 
-nav a:hover { 
+.navigation__item:hover { 
     color: #00BF78;
 }
 
@@ -122,13 +122,19 @@ nav a:hover {
 
 }
 
-button {
+.btn__large {
     font-weight: 500;
     padding: 17px 30px;
+    font-size: 14px;
+   }
+
+.btn {
+    padding: 10px 20px;
     background: #FB9475;
     border-radius: 24px;
     border-width: 0;
     color: #FFFFFF;
+    font-size: 12px;
 }
 
 .header-girl {
@@ -181,7 +187,7 @@ main {
     max-width: 540px;
 }
 
-.section-titl h2 {
+.section__title {
     font-weight: 700;
     font-size: 48px;
     line-height: 59px;
@@ -237,18 +243,120 @@ column-gap: 30px;
     margin-bottom: 28px;
 }
 
-.pluse-card-titl {
-    margin-bottom: 10px;
+.service__title {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
 }
+
+/*margin-bottom: 10px;*/
 
 .pluse-card p {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
 }
+
+
+/*Популярные услуги*/
+
+.services {
+    margin-top: -40px;
+}
+
+.services > div {
+    margin-top: 40px;
+}
+
+.service__picture {
+    height: 180px;
+    max-width: 350px;
+    overflow: hidden;
+    border-radius: 8px;
+    }
+    
+.service__img {
+    height: 100%;
+    width: auto;
+}
+
+.service__descr {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/*Услуги и стоимость*/
+
+.navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+}
+
+.navigation__item:not(:last-child) {
+    margin-right: 28px;
+
+}
+
+.navigation__item a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.15px color;
+}
+
+.navigation__item a:hover { 
+    color: #00BF78;
+}
+
+.navigation__item:active { 
+    color: #00BF78;
+    text-decoration: underline;
+
+}
+
+.colrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price_title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.price_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.st {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: #00BF78;
+}
+
+/*Мастера*/
+
+
+.masters__img {
+
+}
+
+/*.section--grey {
+    background-color: #F8F6F7;*/
+
 
 /*ФУТЕР*/
 footer {
@@ -272,9 +380,7 @@ footer {
     justify-content: right;
     list-style-type: none;
     padding-left: 0;
-   
-   }
-
+}
 
 
 .nav2 li:not(:last-child){
