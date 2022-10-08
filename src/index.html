@@ -2,11 +2,11 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мир красоты</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.1/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -31,38 +31,44 @@
                     </div>
                 </div>
 
-                <div class="header-hero">
-                    <h1>Создай свой образ вместе с нами</h1>
-                    <p>Идеальный образ за 60 минут</p>
-
-                    <button type="button" class="btn btn__large">Записаться онлайн</button>
-                </div>
-
-                <ul class="social social_vertical header__social">
-                    <li class="social__item">
-                      <a href="#" class="social__link">
-                        <img src="../BWorld/img/Vector vk.svg" alt="">
-                      </a>
-                    </li>
-            
-                    <li class="social__item">
-                      <a href="#" class="social__link">
-                        <img src="../BWorld/img/Vector inst.svg" alt="">
-                      </a>
-                    </li>
-            
-                    <li class="social__item">
-                      <a href="#" class="social__link">
-                        <img src="../BWorld/img/Vector yt.svg" alt="">
-                      </a>
-                    </li>
-                  </ul>
+                <div class="container-social">
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <div class="header-hero">
+                            <h1>Создай свой образ вместе с нами</h1>
+                            <p>Идеальный образ за 60 минут</p>
+        
+                            <button type="button" class="btn btn__large">Записаться онлайн</button>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <ul class="social header__social">
+                            <li class="social__item">
+                              <a href="#" class="social__link">
+                                <img src="/img/Vector vk.svg" alt="">
+                              </a>
+                            </li>
+                    
+                            <li class="social__item">
+                              <a href="#" class="social__link">
+                                <img src="/img/Vector inst.svg" alt="">
+                              </a>
+                            </li>
+                    
+                            <li class="social__item">
+                              <a href="#" class="social__link">
+                                <img src="/img/Vector yt.svg" alt="">
+                              </a>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
 
                 <div class="header-girl">
                     
                 </div>
 
-                
             </div>
         </header> 
 
@@ -200,7 +206,7 @@
 
                     <nav class="navigation uslst__nav">
                         <ul class="navigation__list">
-                            <li class="navigation__item"><a href="#">Стрижка и укладка</a></li>
+                            <li class="navigation__item"><a href="#pricha">Стрижка и укладка</a></li>
                             <li class="navigation__item"><a href="#">Косметология</a></li>
                             <li class="navigation__item"><a href="#">Маникюр и педикюр</a></li>
                             <li class="navigation__item"><a href="#">Макияж</a></li>
@@ -211,7 +217,7 @@
 
 
                     <div class="section__inner">
-                        <div class="row masters">
+                        <div id="pricha" class="row-masters">
                             <div class="col-lg-5 col-md-6 col-sm-12">
 
                                 <div class="col">
@@ -301,7 +307,7 @@
                     </div>
     
                     <div class="section__inner">
-                        <p>Дружная команда настоящих профессионалов</p>
+                        <p class="masters-p">Дружная команда настоящих профессионалов</p>
                     </div>
 
                     <div class="section__inner">
@@ -313,8 +319,8 @@
                                     </div>
             
                                         <h4 class="service__title">Краснова Ирина</h4>
-                                            <p class="masters__descr">Мастер ногтевого сервиса</p>
-                                            <p>опыт работы 5 лет</p>
+                                            <p class="price_text">Мастер ногтевого сервиса</p>
+                                            <p class="masters__text">опыт работы 5 лет</p>
                                             </div>
                                         </div>
             
@@ -326,7 +332,7 @@
             
                                                 <h4 class="service__title">Калилова Жанна</h4>
                                                 <p class="masters__descr">Визажист-стилист</p>
-                                                <p>опыт работы 5 лет</p>
+                                                <p class="masters__text">опыт работы 5 лет</p>
                                             </div>
                                         </div>
             
@@ -338,7 +344,7 @@
             
                                                 <h4 class="service__title">Киселева Алина</h4>
                                                 <p class="masters__descr">Парикмахер</p>
-                                                <p>опыт работы 5 лет</p>
+                                                <p class="masters__text">опыт работы 5 лет</p>
                                             </div>
                                         </div>
             
@@ -350,7 +356,7 @@
             
                                                 <h4 class="service__title">Иванова Елена</h4>
                                                 <p class="masters__descr">Мастер ногтевого сервиса</p>
-                                                <p>опыт работы 5 лет</p>
+                                                <p class="masters__text">опыт работы 5 лет</p>
                                             </div>
                                         </div>
             
