@@ -13,12 +13,16 @@
         <header class="header">
             <div class="container">
                 <div class="header-top">
-                    <a href="" class="logo">Мир красоты</a>
 
+                    
+                    <a href="" class="logo">Мир красоты</a>
+                    
                     <nav class="navigation header__nav">
+                        <input type="checkbox" id="checkbox_toggle"/>
+                    <label for="checkbox_toggle" class="hamburger"><span class="humburger-line"></span></label>
                         <ul class="navigation__list">
-                            <li class="navigation__item"><a href="#">Услуги и цены</a></li>
-                            <li class="navigation__item"><a href="#">Мастера</a></li>
+                            <li class="navigation__item"><a href="#price">Услуги и цены</a></li>
+                            <li class="navigation__item"><a href="#masters">Мастера</a></li>
                             <li class="navigation__item"><a href="#">Наши работы</a></li>
                             <li class="navigation__item"><a href="#about">О нас</a></li>
                             <li class="navigation__item"><a href="#">Наши контакты</a></li>
@@ -75,21 +79,25 @@
         <main class="main">
             <section id="about" class="salon">
                 <div class="container">
-                    <div >
-                        <h2 class="section__title">О салоне</h2>
-                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div>
+                                <h2 class="section__title">О салоне</h2>
+                            </div>
 
-                    <div class="section-inner">
-                        <p class="p1">Мир красоты - это уютный салон в самом центре города. Здесь работают профессиональные визажисты, стилисты и мастера татуажа. </p>
-                        <p class="p2">Красота и хороший уход никогда не выходят из моды. Мы приглашаем Вас в место, где гармония обретает форму,
-                            а внешность становится отражением внутреннего мира. Новая жизнь начинается с небольших изменений. Мы помогаем нашим клиентам воплотить их индивидуальность во внешнем облике. Мы создаем стиль – вместе с Вами и для Вас.</p>
-                    </div> 
-                    
-                    <div class="salon-video">
-                    
-                    </div>
+                            <div class="section-inner">
+                                <p class="p1">Мир красоты - это уютный салон в самом центре города. Здесь работают профессиональные визажисты, стилисты и мастера татуажа. </p>
+                                <p class="p2">Красота и хороший уход никогда не выходят из моды. Мы приглашаем Вас в место, где гармония обретает форму,
+                                    а внешность становится отражением внутреннего мира. Новая жизнь начинается с небольших изменений. Мы помогаем нашим клиентам воплотить их индивидуальность во внешнем облике. Мы создаем стиль – вместе с Вами и для Вас.</p>
+                            </div> 
+                        </div>
 
-                    
+                        <div class="col-sm-6">
+                            <div class="salon-video">
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -198,7 +206,7 @@
 
 
 
-            <section id="uslst" class="services">
+            <section id="price" class="price__section">
                 <div class="container">
                     <div class="section__main">
                         <h2 class="section__title">Услуги и цены</h2>
@@ -216,12 +224,11 @@
                     </nav>
 
 
-                    <div class="section__inner">
-                        <div id="pricha" class="row-masters">
-                            <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div id="pricha" class="row">
+                        <div class="col-lg-5 col-md-6 col-sm-12">
 
-                                <div class="col">
-                                    <div class="colrow">
+                                <div class="price__col">
+                                    <div class="price__colrow">
                                         <div>
                                             <h5 class="price_title">Женская стрижка</h5>
                                             <p class="price_text">Короткие волосы</p>
@@ -229,7 +236,7 @@
                                         <div><p class="st">1200 ₽</p></div>
                                     </div>
 
-                                    <div class="colrow">
+                                    <div class="price__colrow">
                                         <div>
                                             <h5 class="price_title">Мужская стрижка</h5>
                                             <p class="price_text">Короткие волосы</p>
@@ -237,7 +244,7 @@
                                         <div><p class="st">1200 ₽</p></div>
                                     </div>
 
-                                    <div class="colrow">
+                                    <div class="price__colrow">
                                         <div>
                                             <h5 class="price_title">Детский Стиль</h5>
                                             <p class="price_text">Короткие волосы</p>
@@ -245,7 +252,7 @@
                                         <div><p class="st">1200 ₽</p></div>
                                     </div>
 
-                                    <div class="colrow">
+                                    <div class="price__colrow">
                                         <div>
                                             <h5 class="price_title">Креативный Стиль</h5>
                                             <p class="price_text">Короткие волосы</p>
@@ -258,8 +265,8 @@
 
                             <div class="col-lg-5 col-md-6 col-sm-12">
 
-                                <div class="col">
-                                    <div class="colrow">
+                                <div class="price__col">
+                                    <div class="price__colrow">
                                         <div>
                                             <h5 class="price_title">Стрижка бороды и усов</h5>
                                             <p class="price_text">Короткие волосы</p>
@@ -267,7 +274,7 @@
                                         <div><p class="st">1200 ₽</p></div>
                                     </div>
 
-                                    <div class="colrow">
+                                    <div class="price__colrow">
                                         <div>
                                             <h5 class="price_title">Экспресс укладка</h5>
                                             <p class="price_text">Короткие волосы</p>
@@ -275,7 +282,7 @@
                                         <div><p class="st">1200 ₽</p></div>
                                     </div>
 
-                                    <div class="colrow">
+                                    <div class="price__colrow">
                                         <div>
                                             <h5 class="price_title">Укладка дневная</h5>
                                             <p class="price_text">Короткие волосы</p>
@@ -283,19 +290,17 @@
                                         <div><p class="st">1200 ₽</p></div>
                                     </div>
 
-                                    <div class="colrow">
+                                    <div class="price__colrow">
                                         <div>
                                             <h5 class="price_title">Прическа вечерняя (свадебная)</h5>
                                             <p class="price_text">Короткие волосы</p>
                                         </div>
                                         <div><p class="st">3000 ₽</p></div>
                                     </div>
-
                             </div>
-
                         </div>
                     </div>
-                </div>
+                
 
 
             </section>
@@ -319,7 +324,7 @@
                                     </div>
             
                                         <h4 class="service__title">Краснова Ирина</h4>
-                                            <p class="price_text">Мастер ногтевого сервиса</p>
+                                            <p class="masters__descr">Мастер ногтевого сервиса</p>
                                             <p class="masters__text">опыт работы 5 лет</p>
                                             </div>
                                         </div>
@@ -385,14 +390,14 @@
 
         <footer class="footer">
             <div class="container">
-                <div class="info">
+                <div class="footer_info">
                     <p> &#169; 2020 "Море красоты"</p>
                     <a href="/">Политика конфиденциальности</a>
                 </div>
 
                 <ul class="nav2">
-                    <li><a href="#">Услуги и цены</a></li>
-                    <li><a href="#">Мастера</a></li>
+                    <li><a href="#price">Услуги и цены</a></li>
+                    <li><a href="#masters">Мастера</a></li>
                     <li><a href="#">Наши работы</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
