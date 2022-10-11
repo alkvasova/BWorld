@@ -1,0 +1,329 @@
+html {
+    box-sizing: border-box;
+}
+
+html, body, {
+  height: 100%;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font: 14px 'Montserrat', sans-serif;
+    color: #333333;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
+
+.header, .footer {
+    flex-shrink: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.header {
+    background-color: #F8F6F7;
+    background-image: url('/img/bg.png');
+    overflow: hidden;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.header .container {
+    position: relative;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li:not(:last-child) {
+    margin-right: 28px;
+
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.15px color;
+}
+
+nav a:hover { 
+    color: #00BF78;
+}
+
+.tel {
+    display: flex;
+    flex-direction: column;
+    padding-top: 34px;
+    }
+
+.tel > a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.tel > p {
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.header-hero {
+    max-width: 540px;
+    padding-top: 90px;
+    padding-bottom: 130px;
+
+}
+
+.header-hero h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    
+}
+
+.header-hero p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+}
+
+button {
+    font-weight: 500;
+    padding: 17px 30px;
+    background: #FB9475;
+    border-radius: 24px;
+    border-width: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.header-girl {
+    width: 524px;
+    height: 510px;
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+}
+
+.header-girl:after {
+    content: '';
+    background: url('/img/makiiazh-devushka-litso-ruka-pricheska-volosy-golubye-glaza\ 1.png');
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    z-index: 2;
+}
+
+.header-girl:before {
+    content: '';
+    width: 472px;
+    height: 472px;
+    background-color: #FB9475;
+    position: absolute;
+    bottom: -110px;
+    right: 0;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+    
+/*MAIN*/
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1 1 auto;
+}
+
+
+.main .container {
+    position: relative;
+}
+
+
+.section-inner {
+    max-width: 540px;
+}
+
+.section-titl h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.section-inner .p1 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.section-inner .p2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.video {
+    width: 445px;
+    height: 296px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 130px;
+    
+}
+
+.video::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,.2);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+    
+
+}
+
+.video::after {
+    content: 'Короткое видео о нас';
+    padding-top: 66px;
+    font-style: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(/img/iconPlay.svg) no-repeat center top;
+    
+
+}
+
+.salon-about {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 90px;
+}
+
+/*Плюсы*/
+
+.pluse {
+padding: 100px 0;
+}
+
+.pluse-row {
+display: flex;
+column-gap: 30px;
+
+}
+
+.pluse-card {
+    text-align: center; 
+}
+
+.pluse-img {
+    margin-bottom: 28px;
+}
+
+.pluse-card-titl {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.pluse-card p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*ФУТЕР*/
+footer {
+    padding: 20px 165px;
+    color: #333333;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    flex: 0 0 auto;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    padding-left: 0;
+   
+   }
+
+
+
+.nav2 li:not(:last-child){
+    margin-right: 28px;
+}
+    
+.nav2 > li > a {
+    text-decoration: none;
+    color: #333333;
+    
+}
+
+.info > a {
+    text-decoration-line: underline;
+    color: #278AFF;
+}
+
+
