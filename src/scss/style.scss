@@ -482,11 +482,16 @@ h4.service__title {
     height: 338px;
 }
 
+.section__actions {
+    padding-top: 20px;
+}
+
 .btn_action {
     text-align: end;
     border: none;
     background-color: rgba(255, 255, 255, 0);
     z-index: 2;
+    
 } 
 
 .btn_action:hover {
@@ -538,6 +543,7 @@ padding-top: 100px;
 /*Контакты*/
 
 .contacts_section {
+    max-height: 550px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -603,11 +609,7 @@ div.contacts_social {
     }
 }
 
-.form {
-    width: 375px;
-    height: 326px;
-    
-}
+
 
 .form_title{
     font-weight: 600;
@@ -657,21 +659,21 @@ div.contacts_social {
 }
 
 .form {
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 40px 35px;
-position: absolute;
-width: 445px;
-height: 406px;
-background: #FFFFFF;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 35px;
+    position: absolute;
+    width: 445px;
+    height: 406px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
 }
 
 .col-5 {
     height: 406px;
-}
+    }
 
 .form_textBottom {
     margin: 0;
