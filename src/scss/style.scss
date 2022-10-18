@@ -297,7 +297,7 @@ main {
 /*Плюсы*/
 
 .pluse {
-padding: 100px 0;
+padding: 50px 0;
 
 &-row {
     display: flex;
@@ -392,6 +392,13 @@ padding: 100px 0;
 
 .uslst__nav {
     padding-bottom: 47px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.pricha-price {
+    column-gap: 126px;
 }
 
 .price__colrow {
@@ -693,7 +700,7 @@ footer {
     flex: 0 0 auto;
 }
 
-.footer .container {
+.container_footer {
     display: flex;
     justify-content: space-between;
     align-items: center;

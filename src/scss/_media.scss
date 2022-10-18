@@ -51,8 +51,6 @@
 
     ul.social.header__social {
         padding: 0;
-        
-        
     }
 
     .header__social {
@@ -66,10 +64,21 @@
     .btn.btn__large {
         margin-left: 120px;
         margin-bottom: 16px;
-
     }
 
-   
+    .logo {
+        order: 2;
+    }
+
+    .navigation {
+        order: 1;
+    }
+
+    .tel {
+        padding-top: 5px;
+        order: 3;
+    }
+
     .navigation__list {
         /*display: none;*/
         max-height: 0;
@@ -90,7 +99,8 @@
     .hamburger {
         display: block;
         padding: 20px 0;
-        order: 1;
+        
+
     }
 
     .navigation__item:not(:last-child) {
@@ -108,7 +118,7 @@
         padding: 0; 
     }
 
-    .footer .container {
+    .container_footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -125,106 +135,103 @@
         padding-left: 0;
     }
 
- 
-.header-mob {
-    display: flex;
-    justify-content: right;
-    gap: 50px;
-}
 
-.salon-about {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.video {
-    margin-top: 0;
-}
-
-.pluse {
-    padding: 50px;
-}
-
-.pluse-row {
-    display: flex;
-    flex-direction: column;
-}
-
-.masters {
-    text-align: center;
-}
-
-.portfolio_brend__icon {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 25px;
-    position: absolute;
-    width: 400px;
-    height: 400 px;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    
-}
-
-.form-input {
-    width: 350px;
-    height: 44px;
-    border: 1px solid #D8D8D8;
-    border-radius: 4px;
-    padding: 15px 16px;
-}
-
-.btn_large2 {
-    font-weight: 500;
-    font-size: 14px;
-    padding: 17px 30px;
-    width: 350px;
-    height: 48px;
-}
-
-.form_text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 0;
-    padding-bottom: 15px;
-    width: 350px;
-}
-
-.form_textBottom, footer {
-    width: 350px;
-}
-.contacts_section {
-    max-height: 800px;
-
-    & .row {
+    .header-mob {
         display: flex;
-        flex-direction: column; 
-        gap: 30px;
+        justify-content: right;
+        gap: 50px;
     }
-}
 
-.col-5 {
-    max-width: 467px;
-}
+    .salon-about {
+        display: flex;
+        flex-direction: column;
+    }
 
-.container_footer{
-    text-align: center;
-    align-items: center;
-}
+    .video {
+        margin-top: 0;
+    }
 
-.header-top {
-    display: flex;
-    flex-direction: column;
-}
+    .pluse {
+        padding: 50px;
+    }
+
+    .pluse-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .masters {
+        text-align: center;
+        gap: 15px;
+    }
+
+    .portfolio_brend__icon {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 25px;
+        position: absolute;
+        width: 400px;
+        height: 400 px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        
+    }
+
+    .form-input {
+        width: 350px;
+        height: 44px;
+        border: 1px solid #D8D8D8;
+        border-radius: 4px;
+        padding: 15px 16px;
+    }
+
+    .btn_large2 {
+        font-weight: 500;
+        font-size: 14px;
+        padding: 17px 30px;
+        width: 350px;
+        height: 48px;
+    }
+
+    .form_text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+        padding-bottom: 15px;
+        width: 350px;
+    }
+
+    .form_textBottom, footer {
+        width: 350px;
+    }
+    .contacts_section {
+        max-height: 800px;
+
+        & .row {
+            display: flex;
+            flex-direction: column; 
+            gap: 30px;
+        }
+    }
+
+    .col-5 {
+        max-width: 467px;
+    }
+
+    .container_footer{
+        text-align: center;
+        align-items: center;
+    }
+
+   
 
 }
