@@ -329,9 +329,6 @@ padding: 50px 0;
 
 /*Популярные услуги*/
 
-.services {
-    margin-top: -40px;
-}
 
 .services > div {
     margin-top: 40px;
@@ -439,7 +436,7 @@ p.masters-p {
     margin: 0;
 }
 
-.masters__descr{
+.masters__descr {
     margin: 0;
     padding-bottom: 20px;
 }
@@ -463,6 +460,7 @@ h4.service__title {
     padding-bottom: 8px;
 }
 
+<<<<<<< HEAD
 /*Наши работы*/
 
 .portfolio_section {
@@ -689,6 +687,46 @@ div.contacts_social {
     line-height: 15px;
 }
 
+=======
+.masters__picture { 
+    display: block; 
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 255px;
+    height: 300px;
+}
+
+.masters__picture::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.masters__picture::after {
+    content: 'Записаться к мастер';
+    font-style: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.masters__picture:hover:before,
+.masters__picture:hover:after {
+    opacity: 1;
+ }
+
+>>>>>>> main
 /*ФУТЕР*/
 footer {
     padding: 20px 165px;
