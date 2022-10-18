@@ -330,8 +330,8 @@ padding: 50px 0;
 /*Популярные услуги*/
 
 
-.services > div {
-    margin-top: 40px;
+.services {
+    row-gap: 48px;
 }
 
 .service__picture {
@@ -460,7 +460,45 @@ h4.service__title {
     padding-bottom: 8px;
 }
 
-<<<<<<< HEAD
+.masters__picture { 
+    display: block; 
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 255px;
+    height: 300px;
+}
+
+.masters__picture::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.masters__picture::after {
+    content: 'Записаться к мастер';
+    font-style: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.masters__picture:hover:before,
+.masters__picture:hover:after {
+    opacity: 1;
+ }
+
+
 /*Наши работы*/
 
 .portfolio_section {
@@ -479,7 +517,6 @@ h4.service__title {
     padding: 0;
     margin: 0;
     column-gap: 30px;
-    
 }
 
 .portfolio_img {
@@ -509,6 +546,7 @@ h4.service__title {
     top: 0px;
     z-index: 1;
 }
+
 
 /*Бренд*/
 
@@ -687,46 +725,7 @@ div.contacts_social {
     line-height: 15px;
 }
 
-=======
-.masters__picture { 
-    display: block; 
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 255px;
-    height: 300px;
-}
 
-.masters__picture::before {
-    content: '';
-    position: absolute;
-    background-color: rgba(0,0,0,.5);
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    opacity: 0;
-}
-
-.masters__picture::after {
-    content: 'Записаться к мастер';
-    font-style: 14px;
-    font-weight: 500;
-    color: #FFFFFF;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-}
-
-.masters__picture:hover:before,
-.masters__picture:hover:after {
-    opacity: 1;
- }
-
->>>>>>> main
 /*ФУТЕР*/
 footer {
     padding: 20px 165px;
