@@ -1,11 +1,6 @@
 @media only screen and (max-width: 992px) { 
 
-
-
 } 
-
-
-
 
 @media only screen and (max-width: 768px) {
 
@@ -29,12 +24,12 @@
 
     .tel {
         padding-top: 14px;
+        & a {
+            font-weight: 500;
+            font-size: 16px;
+        }
     }
-    .tel > a {
-        font-weight: 500;
-        font-size: 16px;
-    }
-
+    
     .logo {
         font-size: 20px;
     }
@@ -53,8 +48,8 @@
     }
 
     .portfolio_brend__icon {
-    flex-wrap: wrap;
-    justify-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 
@@ -189,7 +184,7 @@
         padding: 0; 
     }
 
-    .container_footer {
+    .footer_block {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -224,11 +219,11 @@
 
     .pluse {
         padding: 50px;
-    }
 
-    .pluse-row {
+        &-row {
         display: flex;
         flex-direction: column;
+        }
     }
 
     .masters {
@@ -270,7 +265,7 @@
         padding: 15px 16px;
     }
 
-    .btn_large2 {
+    .btn_large_form {
         font-weight: 500;
         font-size: 14px;
         padding: 17px 30px;
@@ -287,7 +282,7 @@
         width: 350px;
     }
 
-    .form_textBottom {
+    .form_text-bottom{
         width: 350px;
     }
     .contacts_section {
@@ -308,11 +303,9 @@
         margin-right: 1px;
     }
 
-    .container_footer{
+    .footer_block {
         text-align: center;
         align-items: center;
     }
-
-   
 
 }

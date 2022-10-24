@@ -213,11 +213,11 @@
                     <nav class="navigation uslst__nav">
                         <ul class="navigation__list">
                             <li class="navigation__item"><a href="#pricha">Стрижка и укладка</a></li>
-                            <li class="navigation__item"><a href="#">Косметология</a></li>
-                            <li class="navigation__item"><a href="#">Маникюр и педикюр</a></li>
-                            <li class="navigation__item"><a href="#">Макияж</a></li>
-                            <li class="navigation__item"><a href="#">Брови и ресницы</a></li>
-                            <li class="navigation__item"><a href="#">Массаж</a></li>
+                            <li class="navigation__item"><a href="#Cosmetology">Косметология</a></li>
+                            <li class="navigation__item"><a href="#nail">Маникюр и педикюр</a></li>
+                            <li class="navigation__item"><a href="#makeup">Макияж</a></li>
+                            <li class="navigation__item"><a href="#brow">Брови и ресницы</a></li>
+                            <li class="navigation__item"><a href="#massage">Массаж</a></li>
                         </ul>
                     </nav>
 
@@ -298,6 +298,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
 
@@ -374,29 +375,34 @@
                             <h2 class="section__title">Наши работы</h2>
                         </div>
                         <div class="section__actions">
-                            <button type="button" class="btn_action"><img src="/img/arrow1.svg"></button>
-                            <button type="button" class="btn_action"><img src="/img/arrow2.svg"></button>
+                            <button type="button" class="slider-prev"><img src="/img/arrow1.svg"></button>
+                            <button type="button" class="slider-next"><img src="/img/arrow2.svg"></button>
                         </div>
                     </div>
                 </div>
 
-                    <div class="portfolio_picture">
-                        <div class="portfolio_picture_hover">
-                            <img class="portfolio_img" src="/img/portfolio1.png" alt="Наши работы">
+                    <div class="slider">
+
+                        <div class="slider__item">
+                            <a data-fancybox="gallery" href="/img/portfolio1.png"><img class="portfolio_img" src="/img/portfolio1.png" alt="Наши работы"></a>
                         </div>
-                        <div class="portfolio_picture_hover">
-                            <img class="portfolio_img" src="/img/portfolio2.png" alt="Наши работы">
+                        <div class="slider__item">
+                            <a data-fancybox="gallery" href="/img/portfolio2.png"><img class="portfolio_img" src="/img/portfolio2.png" alt="Наши работы"></a>
                         </div>
-                        <div class="portfolio_picture_hover">
-                            <img class="portfolio_img" src="/img/portfolio3.png" alt="Наши работы">
+                        <div class="slider__item">
+                            <a data-fancybox="gallery" href="/img/portfolio3.png"><img class="portfolio_img" src="/img/portfolio3.png" alt="Наши работы"></a>
                         </div>
-                            <div class="portfolio_picture_hover">
-                            <img class="portfolio_img" src="/img/portfolio4.png" alt="Наши работы">
+                        <div class="slider__item">
+                            <a data-fancybox="gallery" href="/img/portfolio4.png"><img class="portfolio_img" src="/img/portfolio4.png" alt="Наши работы"></a>
                         </div>
+                        <div class="slider__item">
+                            <a data-fancybox="gallery" href="/img/portfolio1.png"><img class="portfolio_img" src="/img/portfolio1.png" alt="Наши работы"></a>
+                        </div>
+                        
                     </div>
 
                 <div class="container">
-                    <div class="section__innerBrend">
+                    <div class="section__inner-brend">
                         <div class="portfolio_brend">
                             <p class="portfolio_brend__text">Бренды, которые мы используем в работе</p>
                         </div>
@@ -457,23 +463,24 @@
                             </div>
 
                             <div class="col-5">
+                                <form action="/" method="post" id="form">
                                 <div class="form">
                                     <p class="form_title">Быстрая запись</p>
                                     <p class="form_text">Наш менеджер перезвонит в течение нескольких минут, уточнит подробности и согласует время.</p>
                                 
                                     <div class="form_section">
                                         <div class="fotmInput">
-                                            <input class="form-input" type="text" name="Name" placeholder="Ваше имя">
+                                            <input class="form-input" type="text" name="name" id="Name" placeholder="Ваше имя">
                                         </div>
 
                                         <div class="fotmInput">
-                                            <input class="form-input" type="tel" name="Telefon" placeholder="+7 (___) ___-__-__">
+                                            <input class="form-input" type="tel" name="telefon" id="Telefon" placeholder="+7 (___) ___-__-__">
                                         </div>
-                                        <button type="submit" class="btn btn_large2">Записаться</button>
+                                        <button type="submit" class="btn btn_large_form">Записаться</button>
                                     </div>
-                                    <p class="form_textBottom">Нажимая на кнопку вы соглашаетесь с <a class ="form_href" href="">обработкой персональных данных</a></p>
+                                    <p class="form_text-bottom">Нажимая на кнопку вы соглашаетесь с <a class ="form_href" href="">обработкой персональных данных</a></p>
                                 </div>
-
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -485,7 +492,7 @@
 
         <footer class="footer">
             <div class="container">
-                <div class="container_footer">
+                <div class="footer_block">
                     <div class="footer_info">
                         <p> &#169; 2020 "Море красоты"</p>
                         <a href="/">Политика конфиденциальности</a>
@@ -503,6 +510,7 @@
     </div>
 
 <script src="./js/main.min.js"></script>
+<script src="./js/main.js"></script>
 
 </body>
 </html>
