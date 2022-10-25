@@ -13,21 +13,21 @@
         <header class="header">
             <div class="container">
                 <div class="header-top">
-
                     
                     <a href="" class="logo">Мир красоты</a>
                     
                     <nav class="navigation header__nav">
                         <input type="checkbox" id="checkbox_toggle"/>
-                    <label for="checkbox_toggle" class="hamburger"><span class="humburger-line"></span></label>
+                        <label for="checkbox_toggle" class="hamburger"><span class="humburger-line"></span></label>
                         <ul class="navigation__list">
                             <li class="navigation__item"><a href="#price">Услуги и цены</a></li>
                             <li class="navigation__item"><a href="#masters">Мастера</a></li>
-                            <li class="navigation__item"><a href="#">Наши работы</a></li>
+                            <li class="navigation__item"><a href="#portfolio">Наши работы</a></li>
                             <li class="navigation__item"><a href="#about">О нас</a></li>
-                            <li class="navigation__item"><a href="#">Наши контакты</a></li>
+                            <li class="navigation__item"><a href="#contacts">Наши контакты</a></li>
                         </ul>
                     </nav>
+                    
 
                     <div class="tel">
                         <a href="tel:8(499)6861762">8 (499) 686-17-62</a>
@@ -139,7 +139,7 @@
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="service">
                                     <div class="service__picture">
-                                        <img class="service__img" src="../img/us.png" alt="Услуги">
+                                        <img class="service__img" src="/img/us.png" alt="Услуги">
                                     </div>
 
                                     <h4 class="service__title">Маникюр</h4>
@@ -151,7 +151,7 @@
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="service">
                                     <div class="service__picture">
-                                        <img class="service__img" src="../img/us.png" alt="Услуги">
+                                        <img class="service__img" src="/img/us.png" alt="Услуги">
                                     </div>
                                 
                                     <h4 class="service__title">Покрытие гель-лак</h4>
@@ -163,7 +163,7 @@
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="service">
                                     <div class="service__picture">
-                                        <img class="service__img" src="../img/us.png" alt="Услуги">
+                                        <img class="service__img" src="/img/us.png" alt="Услуги">
                                     </div>
                                     
                                     <h4 class="service__title">Бразильский маникюр</h4>
@@ -175,7 +175,7 @@
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="service">
                                     <div class="service__picture">
-                                        <img class="service__img" src="../img/us.png" alt="Услуги">
+                                        <img class="service__img" src="/img/us.png" alt="Услуги">
                                     </div>
                                     
                                     <h4 class="service__title">Педикюр</h4>
@@ -187,7 +187,7 @@
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="service">
                                     <div class="service__picture">
-                                        <img class="service__img" src="../img/us.png" alt="Услуги">
+                                        <img class="service__img" src="/img/us.png" alt="Услуги">
                                     </div>
                                     
                                     <h4 class="service__title">Парафинотерапия</h4>
@@ -222,7 +222,7 @@
                     </nav>
 
 
-                    <div id="pricha" class="row">
+                    <div id="pricha" class="row pricha-price">
                         <div class="col-lg-5 col-md-6 col-sm-12">
 
                                 <div class="price__col">
@@ -367,36 +367,129 @@
                 </div>
             </section>
 
-            <section id="portfolio" class="section">
+            <section id="portfolio" class="portfolio_section">
                 <div class="container">
-                    <div class="section__header">
-                        <h2 class="section__title">Наши работы</h2>
-                        <div class="section__actions">кнопки</div>
+                    <div class="portfolio-title">
+                        <div class="section__header">
+                            <h2 class="section__title">Наши работы</h2>
+                        </div>
+                        <div class="section__actions">
+                            <button type="button" class="btn_action"><img src="/img/arrow1.svg"></button>
+                            <button type="button" class="btn_action"><img src="/img/arrow2.svg"></button>
+                        </div>
                     </div>
-    
-                    <div class="section__inner">
-                        Section content
+                </div>
+
+                    <div class="portfolio_picture">
+                            <img class="portfolio_img" src="/img/portfolio1.png" alt="Наши работы">
+                            <img class="portfolio_img" src="/img/portfolio2.png" alt="Наши работы">
+                            <img class="portfolio_img" src="/img/portfolio3.png" alt="Наши работы">
+                            <img class="portfolio_img" src="/img/portfolio4.png" alt="Наши работы">
+                    </div>
+
+                <div class="container">
+                    <div class="section__innerBrend">
+                        <div class="portfolio_brend">
+                            <p class="portfolio_brend__text">Бренды, которые мы используем в работе</p>
+                        </div>
+
+                        <div class="portfolio_brend__icon">
+                            <img class="portfolio_brend__img" src="/img/brend1.png" alt="Бренд Wella">
+                            <img class="portfolio_brend__img" src="/img/brend2.png" alt="Бренд Schwarzkopf">
+                            <img class="portfolio_brend__img" src="/img/brend3.png" alt="Бренд Tigi">
+                            <img class="portfolio_brend__img" src="/img/brend4.png" alt="Бренд Londa">
+                            <img class="portfolio_brend__img" src="/img/brend5.png" alt="Бренд Nioxin">
+                        </div>
                     </div>
                 </div>
             </section>
 
+            <section id="contacts" class="contacts_section section--grey">
+                
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                            
+                                <div class="section__header">
+                                    <h2 class="section__title">Контакты</h2>
+                                </div>
+
+                                <div class="section__inner">
+                                    <div class="contacts_info">
+                                        <p class="contacts_info__text">Томск, проспект Ленина, дом 13</p>
+                                        <p class="contacts_info__tel"><a href="tel:8(499)6861762">8 (499) 686-17-62</a></p>
+                                        <p class="contacts_info__email"><a href="email:info@more-krasoty.ru">info@more-krasoty.ru</a></p>
+                                    </div>
+            
+                                    <div class="contacts_social">
+                                        <p class="contacts_social_text">Мы в социальных сетях</p>
+
+                                        <ul class="social vertical__social">
+                                            <li class="social__item">
+                                            <a href="#" class="social__link">
+                                                <img src="/img/Vector vk.svg" alt="">
+                                            </a>
+                                            </li>
+                                    
+                                            <li class="social__item">
+                                            <a href="#" class="social__link">
+                                                <img src="/img/Vector inst.svg" alt="">
+                                            </a>
+                                            </li>
+                                    
+                                            <li class="social__item">
+                                            <a href="#" class="social__link">
+                                                <img src="/img/Vector yt.svg" alt="">
+                                            </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5">
+                                <div class="form">
+                                    <p class="form_title">Быстрая запись</p>
+                                    <p class="form_text">Наш менеджер перезвонит в течение нескольких минут, уточнит подробности и согласует время.</p>
+                                
+                                    <div class="form_section">
+                                        <div class="fotmInput">
+                                            <input class="form-input" type="text" name="Name" placeholder="Ваше имя">
+                                        </div>
+
+                                        <div class="fotmInput">
+                                            <input class="form-input" type="tel" name="Telefon" placeholder="+7 (___) ___-__-__">
+                                        </div>
+                                        <button class="btn btn_large2">Записаться</button>
+                                    </div>
+                                    <p class="form_textBottom">Нажимая на кнопку вы соглашаетесь с <a class ="form_href" href="">обработкой персональных данных</a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            
+            </section>
 
 
         </main>
 
         <footer class="footer">
             <div class="container">
-                <div class="footer_info">
-                    <p> &#169; 2020 "Море красоты"</p>
-                    <a href="/">Политика конфиденциальности</a>
-                </div>
+                <div class="container_footer">
+                    <div class="footer_info">
+                        <p> &#169; 2020 "Море красоты"</p>
+                        <a href="/">Политика конфиденциальности</a>
+                    </div>
 
-                <ul class="nav2">
-                    <li><a href="#price">Услуги и цены</a></li>
-                    <li><a href="#masters">Мастера</a></li>
-                    <li><a href="#">Наши работы</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+                    <ul class="nav2">
+                        <li><a href="#price">Услуги и цены</a></li>
+                        <li><a href="#masters">Мастера</a></li>
+                        <li><a href="#portfolio">Наши работы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
             </div>   
         </footer>
     </div>

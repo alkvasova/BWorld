@@ -18,6 +18,7 @@
     max-width: 1100px;
     margin: auto;
     padding: 0 15px;
+
 }
 
 section {
@@ -60,7 +61,6 @@ section {
 
 .navigation__item:not(:last-child) {
     margin-right: 28px;
-
 }
 
 .navigation__item a {
@@ -122,7 +122,6 @@ section {
     transition: all 0.3s;
     width: 100%;
     height: 100%;
-
 }
 
 .humburger-line::before {
@@ -133,13 +132,10 @@ section {
     top: -7px;
 }
 
-
-
 .header-hero {
     max-width: 540px;
     padding-top: 90px;
     padding-bottom: 130px;
-
 }
 
 .header-hero h1 {
@@ -148,7 +144,6 @@ section {
     line-height: 59px;
     margin-bottom: 0;
     padding-bottom: 17px;
-    
 }
 
 .header-hero p {
@@ -157,7 +152,6 @@ section {
     line-height: 24px;
     margin: 0;
     padding-bottom: 59px;
-
 }
 
 .btn {
@@ -213,13 +207,11 @@ section {
     list-style: none;
     align-items: flex-end;
     padding-top: 120px;
-
 }
 
 .social__link {
     text-decoration: none;
     justify-content: center;
-       
 }  
 
 .social__item {
@@ -234,7 +226,6 @@ main {
     height: 100%;
     flex: 1 1 auto;
 }
-
 
 .main .container {
     position: relative;
@@ -306,7 +297,7 @@ main {
 /*Плюсы*/
 
 .pluse {
-padding: 100px 0;
+padding: 50px 0;
 
 &-row {
     display: flex;
@@ -335,14 +326,12 @@ padding: 100px 0;
     line-height: 22px;
 }
 
-/*margin-bottom: 10px;*/
-
 
 /*Популярные услуги*/
 
 
-.services > div {
-    margin-top: 40px;
+.services {
+    row-gap: 48px;
 }
 
 .service__picture {
@@ -392,14 +381,21 @@ padding: 100px 0;
     color: #00BF78;
 }
 
+
 .navigation__item:active { 
     color: #00BF78;
     text-decoration: underline;
-
 }
 
 .uslst__nav {
     padding-bottom: 47px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.pricha-price {
+    column-gap: 126px;
 }
 
 .price__colrow {
@@ -502,6 +498,234 @@ h4.service__title {
     opacity: 1;
  }
 
+
+/*Наши работы*/
+
+.portfolio_section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio_picture {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    column-gap: 30px;
+}
+
+.portfolio_img {
+    width: 338px;
+    height: 338px;
+}
+
+.section__actions {
+    padding-top: 20px;
+}
+
+.btn_action {
+    text-align: end;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 2;
+    
+} 
+
+.btn_action:hover {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #4b102d;
+    border-radius: 50%;
+    left: 56px;
+    top: 0px;
+    z-index: 1;
+}
+
+
+/*Бренд*/
+
+.section__innerBrend {
+padding-top: 100px;
+}
+
+.portfolio_brend {
+    padding-bottom: 40px;
+
+    &__icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40pxn;
+        
+    }
+
+    &__text {
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0;
+        }
+
+    &__img {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap; 
+            
+    }
+}
+
+
+/*Контакты*/
+
+.contacts_section {
+    max-height: 550px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contacts_info {
+    margin: 0;
+    padding-bottom: 32px;
+
+    &__text {
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    &__tel {
+        margin: 0;
+        padding-bottom: 20px;
+    
+        & a {
+            text-decoration: none;
+            color: #333333;
+            margin: 0;
+            
+        } 
+    }
+
+    &__email {
+        margin: 0;
+    
+        & a {
+            text-decoration-line: underline;
+            color: #278AFF;
+            margin: 0;
+        }
+    }
+}
+
+.contacts_social_text {
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+.vertical__social {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    column-gap: 24px;
+    margin: 0;
+
+    & li.social__item {
+    padding: 0;
+    
+    }
+}
+
+div.contacts_social {
+    margin: 0;
+    & p {
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+
+
+
+.form_title{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.form_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 35px;
+}
+
+.form_section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    padding-bottom: 16px;
+    gap: 20px;
+}
+
+.form-input {
+    width: 375px;
+    height: 44px;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    padding: 15px 16px;
+}
+
+.btn_large2 {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 17px 30px;
+    width: 375px;
+    height: 48px;
+}
+
+.form_href {
+    font-weight: 300;
+    font-size: 12px;
+    text-decoration-line: underline;
+    color: #278AFF;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 35px;
+    position: absolute;
+    width: 445px;
+    height: 406px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.col-5 {
+    height: 406px;
+    }
+
+.form_textBottom {
+    margin: 0;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
 /*ФУТЕР*/
 footer {
     padding: 20px 165px;
@@ -513,7 +737,7 @@ footer {
     flex: 0 0 auto;
 }
 
-.footer .container {
+.container_footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
