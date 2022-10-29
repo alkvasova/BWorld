@@ -161,12 +161,20 @@ section {
     color: #FFFFFF;
     font-size: 12px;
     cursor: pointer;
+        & a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 12px;
+        }
 }
 
 .btn__large {
-    font-weight: 500;
     padding: 17px 30px;
-    font-size: 14px;
+    
+        & a {
+            font-weight: 500;
+            font-size: 14px;
+        }
    }
 
 .header-girl {
@@ -486,7 +494,7 @@ h4.service__title {
 }
 
 .masters__picture::after {
-    content: 'Записаться к мастер';
+    content: 'Записаться к мастеру';
     font-style: 14px;
     font-weight: 500;
     color: #FFFFFF;
@@ -772,5 +780,121 @@ footer {
     text-decoration-line: underline;
     color: #278AFF;
 }
+
+/*Попап*/
+
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+            transition: 0.5s all;
+        }
+    }
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    transition: 0.5s all;
+
+        & label {
+            width: 100%;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.popup {
+    &.label__text {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #cfd0d3;
+        margin-bottom: 5px;
+    }
+}
+
+.popup input {
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+
+        & :focus {
+            border-bottom: 1px solid #FB9475;
+        }
+
+        &:focus + .label__text {
+            color: #FB9475;
+        }
+}
+
+.select_form {
+    display: inline-block;
+}
+
+select {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    cursor: default;
+    font: 400 13.3333px Arial;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);
+}
+
+.popup_button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #FB9475;
+    border-radius: 30px;
+    background: #FB9475;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all;
+
+        &:hover {
+            background: #fff;
+            color:#FB9475;
+            transition: 0.5s all;
+        }
+}
+
 
 @import 'media';
