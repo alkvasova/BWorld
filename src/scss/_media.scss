@@ -1,4 +1,67 @@
+@media only screen and (max-width: 992px) { 
 
+} 
+
+@media only screen and (max-width: 768px) {
+
+    .header-girl {
+        opacity: 0.5;
+    }
+
+    .header-hero {
+        position: relative;
+        z-index: 3;
+    }
+
+    .header__nav {
+        justify-content: center;
+        max-width: 400px;
+    }
+
+    .navigation__list {
+        justify-content: center;
+    }
+
+    .tel {
+        padding-top: 14px;
+        & a {
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+
+    .navigation__item:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    .salon-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video {
+        margin-top: 0;
+    }
+
+    .portfolio_brend__icon {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .contacts_section .row {
+        row-gap: 30px;
+    }
+
+    .footer {
+        padding: 20px 40px;
+    }
+
+}
 
 
   @media screen and (max-width: 480px) {
@@ -30,13 +93,16 @@
         font-size: 38px;
         line-height: 50px;
         margin: 0;
-        margin-left: 74px;
         padding-bottom: 17px;
         text-align: center;
         max-width: 300px;
     }
 
     .header-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -62,7 +128,6 @@
     }
 
     .btn.btn__large {
-        margin-left: 120px;
         margin-bottom: 16px;
     }
 
@@ -88,6 +153,7 @@
         text-align: center;
         right: 0;
         left: 0;
+        z-index: 4;
     }
 
     #checkbox_toggle:checked ~ .navigation__list {
@@ -100,7 +166,7 @@
         display: block;
         padding: 20px 0;
         
-
+        left: 15px;
     }
 
     .navigation__item:not(:last-child) {
@@ -118,7 +184,7 @@
         padding: 0; 
     }
 
-    .container_footer {
+    .footer_block {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -153,17 +219,23 @@
 
     .pluse {
         padding: 50px;
-    }
 
-    .pluse-row {
+        &-row {
         display: flex;
         flex-direction: column;
+        }
     }
 
     .masters {
-        text-align: center;
         gap: 15px;
     }
+
+    .portfolio_picture {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    
 
     .portfolio_brend__icon {
         display: flex;
@@ -193,7 +265,7 @@
         padding: 15px 16px;
     }
 
-    .btn_large2 {
+    .btn_large_form {
         font-weight: 500;
         font-size: 14px;
         padding: 17px 30px;
@@ -210,7 +282,7 @@
         width: 350px;
     }
 
-    .form_textBottom, footer {
+    .form_text-bottom{
         width: 350px;
     }
     .contacts_section {
@@ -227,11 +299,13 @@
         max-width: 467px;
     }
 
-    .container_footer{
+    .nav2 li:not(:last-child) {
+        margin-right: 1px;
+    }
+
+    .footer_block {
         text-align: center;
         align-items: center;
     }
-
-   
 
 }
