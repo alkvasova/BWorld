@@ -8,12 +8,8 @@ function init () {
         slidesToShow: 4,
         prevArrow: '.slider-prev',
         nextArrow: '.slider-next',
-        infinite: false,
+        infinite: true,
     
-
-
-
-
     responsive: [
         {
           breakpoint: 1300,
@@ -37,12 +33,19 @@ function init () {
             slidesToShow: 1,
             slidesToScroll: 1
           }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
       ]
     })
 
 
-
+    
 }
 
 

@@ -263,7 +263,7 @@ main {
 }
 
 .video {
-    width: 445px;
+    max-width: 445px;
     height: 296px;
     border-radius: 8px;
     overflow: hidden;
