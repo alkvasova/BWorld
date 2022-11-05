@@ -897,7 +897,7 @@
 
 
             <div class="popup__bg">
-                <form class="popup" id="form_big" name="form_big">
+                <form class="popup" id="form_big" name="form_big" method="POST">
                     <img class="close-popup" src="./img/close_24px.svg" alt="закрыть форму">
 
                     <label>
@@ -916,7 +916,7 @@
                     </label>
 
                     <label for="master">Выберите мастера:</label>
-                    <select name="master" id="masater">
+                    <select name="master" id="master">
                         <option value="irina">Краснова Ирина</option>
                         <option value="zhanna">Калилова Жанна</option>
                         <option value="alina">Киселева Алина</option>
@@ -941,6 +941,7 @@
                     </label>
 
                     <button type="submit" id="popup_button" name="popup_button" class="popup_button">Записаться</button>
+                    <div id="loader" class="hidden">Отправляем...</div> 
                 </form>
             </div>
 
@@ -974,6 +975,10 @@
 <script src="https://unpkg.com/imask"></script>
 <script src="./js/mask.js"></script>
 <script src="./js/val.js"></script>
+<script src="./js/form.js"></script>
+
+
+
 
 
 
