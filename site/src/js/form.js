@@ -26,6 +26,8 @@ fetch(`${API_PATH}/login`, {
 
     .then(response => console.log(response));
 
+    
+
     function handleFormSubmit(event) {
         event.preventDefault()
         
@@ -47,8 +49,6 @@ fetch(`${API_PATH}/login`, {
         })
         .then(response => {return response.json()})
         .then (response => console.log(response));
-
-        
     }
   
     const applicantForm = document.getElementById('form_big')
