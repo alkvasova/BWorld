@@ -14,15 +14,18 @@ function App() {
   return (
     <div className="App">
       {isAuth && (
-        <header>
+        <header className="Nav">
+          <h1>Мир красоты</h1>
           <nav>
-            <ul>
+
+            
+            <ul className="Nav_inner">
               <li><Link to="/">Записи</Link></li>
               <li><Link to="/employees">Сотрудники</Link></li>
             </ul>
           </nav>
 
-          <button onClick={logout}>Logout</button>
+          <button className="But" onClick={logout}>Logout</button>
         </header>
       )}
 

@@ -5,3 +5,29 @@
   max-width: 1000px;
   margin: auto;
 }
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(224, 224, 223);
+  padding: 10px;
+  align-items: center;
+}
+
+.Nav_inner {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.But {
+  height: 30px;
+}
+
+h1 {
+  margin: 0;
+}
+
