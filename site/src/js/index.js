@@ -3,6 +3,7 @@ import 'slick-carousel/slick/slick';
 import '@fancyapps/ui';
 import $ from 'jquery';
 
+
 function init () {
     $('.slider').slick({
         slidesToShow: 4,
@@ -23,6 +24,7 @@ function init () {
         {
           breakpoint: 1024,
           settings: {
+            infinite: true,
             slidesToShow: 2,
             slidesToScroll: 2
           }
