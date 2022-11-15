@@ -48,7 +48,19 @@ fetch(`${API_PATH}/login`, {
         }
         })
         .then(response => {return response.json()})
-        .then (response => console.log(response));
+        .then (response => {
+            if (response.status === 'Opened') {
+                const elem = document.createElement('div');
+                elem.classList.add(this.cssPrefix);
+                elem.innerHTML = `<span class="${this.cssPrefix}__message">Ваша заявка отправлена! В ближайшее время с вами свяжется менеджер</span>`;
+                form_big.append(elem)
+                setTimeout(function() {
+                    document.getElementById('form_big').style.display = 'none';
+                    }, 3000)
+            }
+        }            
+            //console.log(response)
+            );
     }
   
     const applicantForm = document.getElementById('form_big')
@@ -56,3 +68,4 @@ fetch(`${API_PATH}/login`, {
   
   
    
+    

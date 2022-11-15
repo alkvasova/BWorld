@@ -42,9 +42,7 @@
                             <h1>Создай свой образ вместе с нами</h1>
                             <p>Идеальный образ за 60 минут</p>
         
-                            <button type="button" class="btn btn__large">
-                                <a href="#" class="open-popup">Записаться онлайн</a> 
-                            </button>
+                            <button type="button" class="btn btn__large open-popup">Записаться онлайн</button>
                         </div>
                       </div>
                       <div class="col-sm-4">
@@ -146,9 +144,7 @@
 
                                     <h4 class="service__title">Маникюр</h4>
                                     <p class="service__descr">Аппаратный, комбинированный или классический.</p>
-                                    <button class="btn">
-                                        <a href="#" class="open-popup">Записаться</a>
-                                    </button>
+                                    <button class="btn open-popup">Записаться</button>
                                 </div>
                             </div>
 
@@ -160,9 +156,7 @@
                                 
                                     <h4 class="service__title">Покрытие гель-лак</h4>
                                     <p class="service__descr">Гель-лак наносится в несколько слоев с использование базы и топа. Каждый слой полимеризуется в LED-лампе.</p>
-                                    <button class="btn">
-                                        <a href="#" class="open-popup">Записаться</a>
-                                    </button>
+                                    <button class="btn open-popup">Записаться</button>
                                 </div>
                             </div>
                                 
@@ -174,9 +168,7 @@
                                     
                                     <h4 class="service__title">Бразильский маникюр</h4>
                                     <p class="service__descr">Выполняется в одноразовых перчатках наполненных увлажняющим лосьоном.</p>
-                                    <button class="btn">
-                                        <a href="#" class="open-popup">Записаться</a>
-                                    </button>
+                                    <button class="btn open-popup">Записаться</button>
                                 </div>
                             </div>
                                 
@@ -188,9 +180,7 @@
                                     
                                     <h4 class="service__title">Педикюр</h4>
                                     <p class="service__descr">Аппаратный, комбинированный или классический.</p>
-                                    <button class="btn">
-                                        <a href="#" class="open-popup">Записаться</a>
-                                    </button>
+                                    <button class="btn open-popup">Записаться</button>
                                 </div>
                             </div>
                                 
@@ -203,9 +193,7 @@
                                     <h4 class="service__title">Парафинотерапия</h4>
                                     <p class="service__descr">Благодаря этой процедуре увлажнение кожи увеличивается на 80%, также выводит токсины и укрепляет суставы.
                                     </p>
-                                    <button class="btn">
-                                        <a href="#" class="open-popup">Записаться</a>
-                                    </button>
+                                    <button class="btn open-popup">Записаться</button>
                                 </div>
                             </div>
                             
@@ -806,6 +794,9 @@
                         <div class="slider__item">
                             <a data-fancybox="gallery" href="/img/portfolio1.png"><img class="slider__img" src="/img/portfolio1.png" alt="Наши работы"></a>
                         </div>
+                        <div class="slider__item">
+                            <a data-fancybox="gallery" href="/img/portfolio2.png"><img class="slider__img" src="/img/portfolio2.png" alt="Наши работы"></a>
+                        </div>
                         
                     </div>
 
@@ -871,20 +862,20 @@
                             </div>
 
                             <div class="col-5">
-                                <form action="/" method="post" id="form">
+                                <form method="POST" id="Myform" name="Myform" class="Myform">
                                 <div class="form">
                                     <p class="form_title">Быстрая запись</p>
                                     <p class="form_text">Наш менеджер перезвонит в течение нескольких минут, уточнит подробности и согласует время.</p>
                                 
                                     <div class="form_section">
                                         <div class="fotmInput">
-                                            <input class="form-input" type="text" name="name" id="Name" placeholder="Ваше имя">
+                                            <input class="form-input" type="text" name="name" id="name" placeholder="Ваше имя" data-reg="^[А-ЯЁ][а-яё]*$">
                                         </div>
 
                                         <div class="fotmInput">
-                                            <input class="form-input" type="tel" name="telefon" id="Telefon" placeholder="+7 (___) ___-__-__">
+                                            <input class="form-input js-input-phone" type="tel" name="telefon" id="telefon" placeholder="+7 (___) ___-__-__" data-reg="^[\+]?(7|8){1}[(]?[0-9]{3}[)]?(-|\s|\.)?[0-9]{3}[-\s\.]?[0-9]{2}[-\s\.]?[0-9]{2}$">
                                         </div>
-                                        <button type="submit" class="btn btn_large_form">Записаться</button>
+                                        <button type="submit" class="btn btn_large_form button_form" name="button_form" id="button_form">Записаться</button>
                                     </div>
                                     <p class="form_text-bottom">Нажимая на кнопку вы соглашаетесь с <a class ="form_href" href="">обработкой персональных данных</a></p>
                                 </div>
@@ -898,10 +889,13 @@
 
             <div class="popup__bg">
                 <form class="popup" id="form_big" name="form_big" method="POST">
+                    <p class="form_title">Запись</p>
+                    <p class="form_text">Наш менеджер перезвонит в течение нескольких минут, уточнит подробности и согласует время.</p>
+
                     <img class="close-popup" src="./img/close_24px.svg" alt="закрыть форму">
 
                     <label>
-                        <input required type="text" name="name" is="name" data-reg="^[А-ЯЁ][а-яё]*$">
+                        <input required type="text" name="name" id="name" data-reg="^[А-ЯЁ][а-яё]*$">
                         <div class="label__text">
                             Ваше имя
                         </div>
@@ -941,7 +935,8 @@
                     </label>
 
                     <button type="submit" id="popup_button" name="popup_button" class="popup_button">Записаться</button>
-                    <div id="loader" class="hidden">Отправляем...</div> 
+
+                    <p class="form_text-bottom">Нажимая на кнопку вы соглашаетесь с <a class ="form_href" href="">обработкой персональных данных</a></p>
                 </form>
             </div>
 
@@ -976,6 +971,8 @@
 <script src="./js/mask.js"></script>
 <script src="./js/val.js"></script>
 <script src="./js/form.js"></script>
+<script src="./js/valform.js"></script>
+
 
 
 </body>

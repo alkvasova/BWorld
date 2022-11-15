@@ -8,15 +8,15 @@ formArr.forEach((el) => {
       el.setAttribute("is-valid", "0");
       validFormArr.push(el);
     }
-  });
+});
 
 form.addEventListener("input", inputHandler);
 button.addEventListener("click", buttonHandler);
 
 function inputHandler({ target }) {
-    if (target.hasAttribute("data-reg")) {
+  if (target.hasAttribute("data-reg")) {
     inputCheck(target);
-    }
+  }
 }
 
 function inputCheck (el) {

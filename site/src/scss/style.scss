@@ -170,11 +170,8 @@ section {
 
 .btn__large {
     padding: 17px 30px;
-    
-        & a {
-            font-weight: 500;
-            font-size: 14px;
-        }
+    font-weight: 500;
+    font-size: 14px;
    }
 
 .header-girl {
@@ -787,6 +784,12 @@ div.contacts_social {
     line-height: 15px;
 }
 
+.Myform input {
+    &.error {
+        border: 1px solid #d41212;
+        border-color: #d41212;
+        }
+}
 
 /*ФУТЕР*/
 footer {
@@ -855,7 +858,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     background: #fff;
-    width: 400px;
+    width: 450px;
     padding: 25px;
     transition: 0.5s all;
     
@@ -934,6 +937,7 @@ select {
     cursor: pointer;
     text-transform: uppercase;
     transition: 0.5s all;    
+    
 }
 
 .popup_button:hover {
@@ -941,6 +945,8 @@ select {
     color:#FB9475;
     transition: 0.5s all;
 }
+
+
 
 
 @import 'media';
