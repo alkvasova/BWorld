@@ -37,18 +37,13 @@ function inputCheck (el) {
         validFormArr.forEach((el) => {
           allValid.push(el.getAttribute("is-valid"));
         });
-        
+        const isAllValid = allValid.reduce((acc, current) => {
+            return acc && current;
+        });
+            
         if (!Boolean(Number(isAllValid))) {
             e.preventDefault();
-            }
-            const isAllValid = allValid.reduce((acc, current) => {
-            return acc && current;
-            });
-            
-            if (!Boolean(Number(isAllValid))) {
-            e.preventDefault();
-            }
-
+        }
       }
         
   

@@ -1,25 +1,25 @@
-const form = document.forms["Myform"];
-const button = form.elements["button_form"];
-const formArr = Array.from(form);
-const validFormArr = [];
+const forma = document.forms["Myform"];
+const buttonshort = forma.elements["button_form"];
+const formShort = Array.from(forma);
+const validFormShort = [];
 
-formArr.forEach((el) => {
+formShort.forEach((el) => {
     if (el.hasAttribute("data-reg")) {
       el.setAttribute("is-valid", "0");
-      validFormArr.push(el);
+      validFormShort.push(el);
     }
 });
 
-form.addEventListener("input", inputHandler);
-button.addEventListener("click", buttonHandler);
+forma.addEventListener("input", inputHandlerForm);
+buttonshort.addEventListener("click", buttonHandler);
 
-function inputHandler({ target }) {
+function inputHandlerForm({ target }) {
     if (target.hasAttribute("data-reg")) {
-    inputCheck(target);
+    inputCheckForm(target);
     }
 }
 
-function inputCheck (el) {
+function inputCheckForm (el) {
     const inputValue = el.value;
     const inputReg = el.getAttribute("data-reg");
     const reg = new RegExp(inputReg);
@@ -32,45 +32,17 @@ function inputCheck (el) {
     }
 }
 
-function buttonHandler(e) {
-    const allValid = [];
-    validFormArr.forEach((el) => {
-        allValid.push(el.getAttribute("is-valid"));
+function buttonHandlerForm(e) {
+    const allValidForm = [];
+    validFormShort.forEach((el) => {
+        allValidForm.push(el.getAttribute("is-valid"));
     });
-        
-    if (!Boolean(Number(isAllValid))) {
-        e.preventDefault();
-        }
-        const isAllValid = allValid.reduce((acc, current) => {
+    const isAllValidForm = allValidForm.reduce((acc, current) => {
         return acc && current;
-        });
+    });
             
-        if (!Boolean(Number(isAllValid))) {
+    if (!Boolean(Number(isAllValidForm))) {
         e.preventDefault();
     }
-
 }
         
-
-
-
-
-
-// let = document.querySelector('.Myform'),
-//     formInput = document.querySelectorAll('.form-input'),
-//     inputPhone = document.querySelector('.js-input-phone');
-
-// form.onsubmit = function () {
-//     let phoneVal = inputPhone.value;
-
-//     formInputs.forEach(function(input) {
-//         if (input.value === '') {
-//             input.classList.add('error');
-//             console.log('input not filled')
-//         } else {
-//             input.classList.remove('error');
-//         }
-
-//     }) 
-// return false;
-// }

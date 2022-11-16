@@ -92,7 +92,7 @@ export function OrdersPage() {
             title: 'Мастер',
             dataIndex: 'master',
             key: 'master',
-            render: (master: MasterDto) => master.fullName
+            render: (master: MasterDto) => master ? master.fullName : ''
         },
         {
             title: 'Услуга',
